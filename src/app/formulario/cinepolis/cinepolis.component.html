@@ -1,0 +1,88 @@
+<div class="container">
+
+    <div class="row-header">
+        <h1 class="text-center m-5">Cinepolis</h1>
+    </div>
+
+    <div class="row ">
+        <div class="col">
+           <h4 class="text-center mb-4">Entradas</h4>
+
+            <div class="row">
+
+                  <label for="" class="col-sm-4 text-end ">Nombre</label>
+                  <div class="col-sm-7">
+                      <input type="text" class="form-control" id="nombre" [(ngModel)]="nombre">
+                  </div>
+            </div>
+
+            <div class="row mb-3">
+                 <label for="" class="col-sm-4 text-end ">Cantidad Compradores</label>
+                 <div class="col-sm-7">
+                     <input type="text" class="form-control" id="cantidadCompradores" [(ngModel)]="cantidadCompradores">
+                 </div>
+            </div>
+
+            <div class="row mb-3">
+                 <label for="" class="col-sm-4 text-end ">Tarejta Cineco</label>
+                 <div class="col-sm-7">
+                     <div class="form-check form-check-inline">
+                         <input class="form-check-input" type="radio" name="tarjetaCineco" id="si" value="si" [(ngModel)]="opcionTarjeta">
+                         <label class="form-check-label" for="si">Sí</label>
+                     </div>
+                     <div class="form-check form-check-inline">
+                         <input class="form-check-input" type="radio" name="tarjetaCineco" id="no" value="no" [(ngModel)]="opcionTarjeta" checked>
+                         <label class="form-check-label" for="no">No</label>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="row mb-3">
+                    <label for="" class="col-sm-4 text-end">Cantidad de boletas</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="cantidadBoletas" [(ngModel)]="cantidadBoletas">
+                    </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="col">
+           <h4 class="text-center mb-4">Salidas</h4>
+
+           <div class="row mb-3">
+                    <label for="" class="col-sm-4 text-end ">Valor a pagar</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="valorPagar " [(ngModel)]="valorPagar">
+                    </div>
+            </div>
+
+        </div>
+    
+    </div>
+
+    
+    <h4 class="text-center mt-4">Acciones</h4>
+    
+    <div class="d-flex justify-content-center gap-3 mt-4">
+        <button type="button" class="btn btn-primary" (click)="procesar()">Procesar</button>
+        <button type="button" class="btn btn-primary" (click)="limpiar()">Limpiar</button>
+    </div>
+
+   
+
+    <p class="mensajeError" *ngIf="mensajeError">
+        {{mensajeError}}
+    </p>
+
+        
+   
+
+    
+                
+    
+        
+</div>
+
