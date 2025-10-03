@@ -1,0 +1,38 @@
+        body {
+            
+            
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Apila los elementos verticalmente */
+            padding: 20px;
+        }
+
+        /* Contenedor para las 3 tablas de bandas */
+        .bandas {
+            display: flex; /* Esto pone las tablas una al lado de la otra */
+            gap: 15px; /* Espacio entre las tablas */
+            margin-bottom: 20px; /* Margen para separar de la tabla de abajo */
+        }
+        
+        /* Contenedor para la tolerancia y el botón */
+        .otro {
+            display: flex;
+           
+            align-items: center; /* Centra los elementos */
+            gap: 15px; /* Espacio entre la tabla de tolerancia y el botón */
+        }
+
+        /* Estilos básicos para las tablas */
+        table, th, td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            padding: 3px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+    

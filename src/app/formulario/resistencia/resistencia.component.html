@@ -1,102 +1,88 @@
 <body>
+    <div class="bandas">
+        <table>
+            <tr><th>1ra. Banda</th></tr>
+            <tr style="background-color: black; color: white"><td><input type="radio" name="banda1" value="0" [(ngModel)]="opcionBanda1"> 0</td></tr>
+            <tr style="background-color: brown; color: white"><td><input type="radio" name="banda1" value="1" [(ngModel)]="opcionBanda1"> 1</td></tr>
+            <tr style="background-color: red; color: white"><td><input type="radio" name="banda1" value="2" [(ngModel)]="opcionBanda1"> 2</td></tr>
+            <tr style="background-color: orangered; color: white"><td><input type="radio" name="banda1" value="3" [(ngModel)]="opcionBanda1"> 3</td></tr>
+            <tr style="background-color: yellow; color: white"><td><input type="radio" name="banda1" value="4" [(ngModel)]="opcionBanda1"> 4</td></tr>
+            <tr style="background-color: green; color: white"><td><input type="radio" name="banda1" value="5" [(ngModel)]="opcionBanda1"> 5</td></tr>
+            <tr style="background-color: blue; color: white"><td><input type="radio" name="banda1" value="6" [(ngModel)]="opcionBanda1"> 6</td></tr>
+            <tr style="background-color: purple; color: white"><td><input type="radio" name="banda1" value="7" [(ngModel)]="opcionBanda1"> 7</td></tr>
+            <tr style="background-color: gray; color: white"><td><input type="radio" name="banda1" value="8" [(ngModel)]="opcionBanda1"> 8</td></tr>
+            <tr style="background-color: #D4D2D2; color: white"><td><input type="radio" name="banda1" value="9" [(ngModel)]="opcionBanda1"> 9</td></tr>
+        </table>
 
-    <table style="width: 50%; margin-bottom: 30px;">
-        <thead>
-            <tr>
-                
-                <th class="color-band">1ra. Banda</th>
-                <th class="color-band">2da. Banda</th>
-                <th class="color-band">3ra. Banda Multiplicador</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <div class="color-box negro">0</div>
-                    <div class="color-box cafe">1</div>
-                    <div class="color-box rojo">2</div>
-                    <div class="color-box naranja">3 <span style="font-size: 20px;">●</span></div>
-                    <div class="color-box amarillo">4</div>
-                    <div class="color-box verde">5</div>
-                    <div class="color-box azul">6</div>
-                    <div class="color-box morado">7</div>
-                    <div class="color-box gris">8</div>
-                    <div class="color-box blanco">9</div>
-                </td>
-                <td>
-                    <div class="color-box negro">0</div>
-                    <div class="color-box cafe">1</div>
-                    <div class="color-box rojo">2</div>
-                    <div class="color-box naranja">3</div>
-                    <div class="color-box amarillo">4</div>
-                    <div class="color-box verde">5</div>
-                    <div class="color-box azul">6 <span style="font-size: 20px;">●</span></div>
-                    <div class="color-box morado">7</div>
-                    <div class="color-box gris">8</div>
-                    <div class="color-box blanco">9</div>
-                </td>
-                <td>
-                    <div class="multiplier-box negro">x1 <span style="font-size: 20px;">●</span></div>
-                    <div class="multiplier-box cafe">x10</div>
-                    <div class="multiplier-box rojo">x100</div>
-                    <div class="multiplier-box naranja">x1000</div>
-                    <div class="multiplier-box amarillo">x10000</div>
-                    <div class="multiplier-box verde">x100000</div>
-                    <div class="multiplier-box azul">x1000000</div>
-                    <div class="multiplier-box morado">x10000000</div>
-                    <div class="multiplier-box gris">x100000000</div>
-                    <div class="multiplier-box blanco">x1000000000</div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <table>
+            <tr ><th>2da. Banda</th></tr>
+            <tr style="background-color: black; color: white"><td><input type="radio" name="banda2" value="0" [(ngModel)]="opcionBanda2"> 0</td></tr>
+            <tr style="background-color: brown; color: white"><td><input type="radio" name="banda2" value="1" [(ngModel)]="opcionBanda2"> 1</td></tr>
+            <tr style="background-color: red; color: white"><td><input type="radio" name="banda2" value="2" [(ngModel)]="opcionBanda2"> 2</td></tr>
+            <tr style="background-color: orangered; color: white"><td><input type="radio" name="banda2" value="3" [(ngModel)]="opcionBanda2"> 3</td></tr>
+            <tr style="background-color: yellow; color: white"><td><input type="radio" name="banda2" value="4" [(ngModel)]="opcionBanda2"> 4</td></tr>
+            <tr style="background-color: green; color: white"><td><input type="radio" name="banda2" value="5" [(ngModel)]="opcionBanda2"> 5</td></tr>
+            <tr style="background-color: blue; color: white"><td><input type="radio" name="banda2" value="6" [(ngModel)]="opcionBanda2"> 6</td></tr>
+            <tr style="background-color: purple; color: white"><td><input type="radio" name="banda2" value="7" [(ngModel)]="opcionBanda2"> 7</td></tr>
+            <tr style="background-color: gray; color: white"><td><input type="radio" name="banda2" value="8" [(ngModel)]="opcionBanda2"> 8</td></tr>
+            <tr style="background-color: #D4D2D2; color: white"><td><input type="radio" name="banda2" value="9" [(ngModel)]="opcionBanda2"> 9</td></tr>
+        </table>
 
-    <div style="text-align: center; margin-bottom: 20px;">
-        <table style="width: 20%; display: inline-block; margin: 0;">
-            <tr>
-                <td style="border: none; padding: 0;">
-                    <div class="tolerance-box dorado">
-                        <span style="font-size: 20px;">●</span> Dorado 5%
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td style="border: none; padding: 0;">
-                    <div class="tolerance-box plata">
-                        Plata 10%
-                    </div>
-                </td>
-            </tr>
+        <table>
+            <tr><th>3ra. Banda<br>Multiplicador</th></tr>
+            <tr style="background-color: black; color: white"><td><input type="radio" name="multiplicador" value="1" [(ngModel)]="opcionBanda3"> ×1</td></tr>
+            <tr style="background-color: brown; color: white"><td><input type="radio" name="multiplicador" value="10" [(ngModel)]="opcionBanda3"> ×10</td></tr>
+            <tr style="background-color: red; color: white"><td><input type="radio" name="multiplicador" value="100" [(ngModel)]="opcionBanda3"> ×100</td></tr>
+            <tr style="background-color: orangered; color: white"><td><input type="radio" name="multiplicador" value="1000" [(ngModel)]="opcionBanda3"> ×1000</td></tr>
+            <tr style="background-color: yellow; color: white"><td><input type="radio" name="multiplicador" value="10000" [(ngModel)]="opcionBanda3"> ×10000</td></tr>
+            <tr style="background-color: green; color: white"><td><input type="radio" name="multiplicador" value="100000" [(ngModel)]="opcionBanda3"> ×100000</td></tr>
+            <tr style="background-color: blue; color: white"><td><input type="radio" name="multiplicador" value="1000000" [(ngModel)]="opcionBanda3"> ×1000000</td></tr>
+            <tr style="background-color: purple; color: white"><td><input type="radio" name="multiplicador" value="10000000" [(ngModel)]="opcionBanda3"> ×10000000</td></tr>
+            <tr style="background-color: gray; color: white"><td><input type="radio" name="multiplicador" value="100000000" [(ngModel)]="opcionBanda3"> ×100000000</td></tr>
+            <tr style="background-color: #D4D2D2; color: white"><td><input type="radio" name="multiplicador" value="1000000000" [(ngModel)]="opcionBanda3"> ×1000000000</td></tr>
         </table>
     </div>
 
-    <div style="text-align: center; margin-bottom: 30px;">
-        <button>Calcular</button>
+    <div class="otro m-5">
+        <table>
+            <tr><th >Tolerancia</th></tr>
+            <tr style="background-color: #F5E800; color: white"><td><input type="radio" name="tolerancia" value="5" [(ngModel)]="opcionToleracia"> Dorado 5%</td></tr>
+            <tr style="background-color: gray; color: white"><td><input type="radio" name="tolerancia" value="10" [(ngModel)]="opcionToleracia"> Plateado 10%</td></tr>
+        </table>
+        
+        <button (click)="calcular()">Calcular</button>
     </div>
 
-    <table style="width: 80%;">
-        <thead>
-            <tr>
-                <th>Color1</th>
-                <th>Color2</th>
-                <th>Color3</th>
-                <th>Tolerancia</th>
-                <th>Valor</th>
-                <th>Valor máximo</th>
-                <th>Valor mínimo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="res-naranja">Naranja</td>
-                <td class="res-morado">Morado</td>
-                <td class="res-cafe">Café</td>
-                <td class="res-dorado">Dorado 5%</td>
-                <td>3 7 0</td>
-                <td>388.5</td>
-                <td>351.5</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="resultado" >
+        
+        <table id="tabla-resultados">
+            <thead>
+                <tr>
+                    <th>Color 1</th>
+                    <th>Color 2</th>
+                    <th>Color 3</th>
+                    <th>Tolerancia</th>
+                    <th>Valor</th>
+                    <th>Valor máximo</th>
+                    <th>Valor mínimo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngIf="resultado" >
+                    <td>{{ resultado.colorBanda1 }}</td>
+                    <td>{{ resultado.colorBanda2 }}</td>
+                    <td>{{ resultado.colorBanda3 }}</td>
+                    <td>{{ resultado.textoTolerancia}}</td>
+                    <td>{{ resultado.valor }} </td>
+                    <td>{{ resultado.valorMax }} </td>
+                    <td>{{ resultado.valorMin }} </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 
 </body>
+  
+  
+
